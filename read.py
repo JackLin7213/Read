@@ -27,4 +27,14 @@ for d in data:
 	if 'good' in d:
 		good.append(d)
 print('一共有', len(good), '筆留言提到Good')
-print(good[3])
+
+
+#清單快寫法
+good = [d for d in data if 'food' in d]
+
+
+y = 0
+for d in data:
+	if 'good' in d:
+		y = y+1
+print(y)
